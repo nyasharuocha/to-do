@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<div class="todo-container">
     <h1>To-Do List</h1>
-    <input type="text" id="task-input" placeholder="Enter a new task">
-    <button id="add-task-btn">Add Task</button>
+    <div class="input-group">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-task-btn">Add Task</button>
+        <button id="voice-command-btn">Start Voice Command</button>
+    </div>
     <ul id="task-list"></ul>
 </div>
+
+<!-- Listening Pop-up -->
+<div id="listening-popup" class="listening-popup">Listening...</div>
+
 <script src="script.js"></script>
 </body>
 </html>
